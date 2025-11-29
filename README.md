@@ -1,23 +1,25 @@
-# AI Website Chat Agent with Response Evaluation
+# AI Chat Agent with Response Evaluation (Gradio App)
 
-This project implements a **context-aware AI chat agent** designed to answer questions on a personal website. The agent represents the website owner faithfully using their background and LinkedIn profile, and includes an **automated evaluation system** to ensure the quality and relevance of its responses.
+This project implements a **context-aware AI chat agent** using **Gradio**, designed to answer questions about a person’s career, skills, and background. The agent represents the user faithfully using their summary and LinkedIn profile, and includes an **automated evaluation system** to ensure the quality and relevance of its responses.
 
 ---
 
-
 ## Features
 
-- **Personalized Chat Agent**:  
-  The AI acts as the website owner (`{name}`), providing professional and concise answers about career, skills, background, and experience.
+- **Gradio-based Chat Interface**:  
+  Users can interact with the AI agent through a web-based interface powered by Gradio.
+
+- **Personalized AI Agent**:  
+  The AI acts as the user (`{name}`), providing professional and concise answers about career, skills, and experience.
 
 - **Context-Aware Responses**:  
-  Uses a detailed summary and LinkedIn profile to respond accurately to user questions.
+  Uses a detailed summary and LinkedIn profile to answer questions accurately.
 
 - **Response Evaluation**:  
-  Every response is evaluated for quality and relevance using a separate evaluation schema (`EvaluationSchema`). Unacceptable responses are automatically rerun with feedback to improve accuracy.
+  Every response is evaluated for quality using a separate evaluation model (`gpt-4o-mini`). Responses that fail evaluation are automatically rerun with feedback for improvement.
 
 - **Concise Answers**:  
-  The agent is instructed to respond **precisely** to user queries, without adding unnecessary information.
+  The agent responds precisely to user queries without adding unnecessary information.
 
 ---
 
