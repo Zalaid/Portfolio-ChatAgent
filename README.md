@@ -4,6 +4,7 @@ This project implements a **context-aware AI chat agent** designed to answer que
 
 ---
 
+
 ## Features
 
 - **Personalized Chat Agent**:  
@@ -24,5 +25,7 @@ This project implements a **context-aware AI chat agent** designed to answer que
 
 - `portfolio.ipynb` - Main script to handle user messages, generate responses, and evaluate them.
 - `README.md` - Project documentation.
+- Add a .env file with the api key of whatever llm u like i am using OPENAI
+
 
 ---
